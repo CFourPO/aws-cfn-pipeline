@@ -3,6 +3,7 @@
  */
 var time = require('time');
 exports.handler = (event, context, callback) => {
+    console.log("testing");
     var currentTime = new time.Date();
     currentTime.setTimezone("America/Los_Angeles");
     callback(null, {
